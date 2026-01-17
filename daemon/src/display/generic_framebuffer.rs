@@ -230,7 +230,7 @@ pub fn update_ui(
                 _ => {}
             };
             let (color, pattern) = display_style;
-            fb.draw_patterned_line(color, 2, pattern).await;
+            fb.draw_patterned_line(color, 8, pattern).await;
             tokio::time::sleep(Duration::from_millis(REFRESH_RATE)).await;
         }
     });
